@@ -11,6 +11,8 @@
 		BD4DC9A32A8BC14A0097817E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4DC9A22A8BC14A0097817E /* ContentView.swift */; };
 		BD4DC9A52A8BC14B0097817E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4DC9A42A8BC14B0097817E /* Assets.xcassets */; };
 		BD4DC9A92A8BC14B0097817E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4DC9A82A8BC14B0097817E /* Preview Assets.xcassets */; };
+		BD4DC9B02A8BC3810097817E /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4DC9AF2A8BC3810097817E /* ToDoItem.swift */; };
+		BD4DC9B22A8BC5DC0097817E /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4DC9B12A8BC5DC0097817E /* NewToDoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		BD4DC9A42A8BC14B0097817E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD4DC9A62A8BC14B0097817E /* Wave5ToDoList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wave5ToDoList.entitlements; sourceTree = "<group>"; };
 		BD4DC9A82A8BC14B0097817E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD4DC9AF2A8BC3810097817E /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		BD4DC9B12A8BC5DC0097817E /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				BD4DC9A02A8BC14A0097817E /* Wave5ToDoListApp.swift */,
 				BD4DC9A22A8BC14A0097817E /* ContentView.swift */,
+				BD4DC9B12A8BC5DC0097817E /* NewToDoView.swift */,
+				BD4DC9AF2A8BC3810097817E /* ToDoItem.swift */,
 				BD4DC9A42A8BC14B0097817E /* Assets.xcassets */,
 				BD4DC9A62A8BC14B0097817E /* Wave5ToDoList.entitlements */,
 				BD4DC9A72A8BC14B0097817E /* Preview Content */,
@@ -141,6 +147,8 @@
 			files = (
 				BD4DC9A32A8BC14A0097817E /* ContentView.swift in Sources */,
 				BD4DC9A12A8BC14A0097817E /* Wave5ToDoListApp.swift in Sources */,
+				BD4DC9B02A8BC3810097817E /* ToDoItem.swift in Sources */,
+				BD4DC9B22A8BC5DC0097817E /* NewToDoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
