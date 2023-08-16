@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD17B0122A8D0F970029237C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD17B0112A8D0F970029237C /* Persistence.swift */; };
+		BD17B0152A8D14940029237C /* Wave5ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD17B0132A8D14940029237C /* Wave5ToDoList.xcdatamodeld */; };
 		BD4DC9A12A8BC14A0097817E /* Wave5ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4DC9A02A8BC14A0097817E /* Wave5ToDoListApp.swift */; };
 		BD4DC9A32A8BC14A0097817E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4DC9A22A8BC14A0097817E /* ContentView.swift */; };
 		BD4DC9A52A8BC14B0097817E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4DC9A42A8BC14B0097817E /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD17B0112A8D0F970029237C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		BD17B0142A8D14940029237C /* Wave5ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wave5ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		BD4DC99D2A8BC14A0097817E /* Wave5ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wave5ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4DC9A02A8BC14A0097817E /* Wave5ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave5ToDoListApp.swift; sourceTree = "<group>"; };
 		BD4DC9A22A8BC14A0097817E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,11 +62,13 @@
 			children = (
 				BD4DC9A02A8BC14A0097817E /* Wave5ToDoListApp.swift */,
 				BD4DC9A22A8BC14A0097817E /* ContentView.swift */,
+				BD17B0112A8D0F970029237C /* Persistence.swift */,
 				BD4DC9B12A8BC5DC0097817E /* NewToDoView.swift */,
 				BD4DC9AF2A8BC3810097817E /* ToDoItem.swift */,
 				BD4DC9A42A8BC14B0097817E /* Assets.xcassets */,
 				BD4DC9A62A8BC14B0097817E /* Wave5ToDoList.entitlements */,
 				BD4DC9A72A8BC14B0097817E /* Preview Content */,
+				BD17B0132A8D14940029237C /* Wave5ToDoList.xcdatamodeld */,
 			);
 			path = Wave5ToDoList;
 			sourceTree = "<group>";
@@ -145,10 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD17B0152A8D14940029237C /* Wave5ToDoList.xcdatamodeld in Sources */,
 				BD4DC9A32A8BC14A0097817E /* ContentView.swift in Sources */,
 				BD4DC9A12A8BC14A0097817E /* Wave5ToDoListApp.swift in Sources */,
 				BD4DC9B02A8BC3810097817E /* ToDoItem.swift in Sources */,
 				BD4DC9B22A8BC5DC0097817E /* NewToDoView.swift in Sources */,
+				BD17B0122A8D0F970029237C /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +366,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD17B0132A8D14940029237C /* Wave5ToDoList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD17B0142A8D14940029237C /* Wave5ToDoList.xcdatamodel */,
+			);
+			currentVersion = BD17B0142A8D14940029237C /* Wave5ToDoList.xcdatamodel */;
+			path = Wave5ToDoList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BD4DC9952A8BC14A0097817E /* Project object */;
 }

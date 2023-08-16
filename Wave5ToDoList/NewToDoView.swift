@@ -11,8 +11,8 @@ struct NewToDoView: View {
     @State var title: String
     @State var isImportant: Bool
     
-    @Binding var toDoItems: [ToDoItem]
     @Binding var showNewTask : Bool
+    @Environment(\.managedObjectContext) var context
     
     var body: some View {
         VStack {
@@ -49,13 +49,22 @@ struct NewToDoView: View {
     }
     
     private func addTask(title: String, isImportant: Bool = false) {
-        let task = ToDoItem(title: title, isImportant: isImportant)
-        toDoItems.append(task)
+        
+        let task = ToDo(context: context)
+        task.id = UUID()
+        task.title = title
+        task.isImportant = isImportant
+                
+        do {
+                    try context.save()
+        } catch {
+                    print(error)
+        }
     }
 }
 
 struct NewToDoView_Previews: PreviewProvider {
     static var previews: some View {
-        NewToDoView(title: "", isImportant: false, toDoItems: .constant([]), showNewTask: .constant(true))
+        NewToDoView(title: "", isImportant: false, showNewTask: .constant(true))
     }
 }
